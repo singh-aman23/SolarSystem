@@ -1,0 +1,621 @@
+import pandas as pd;
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("SolarSystemData.csv");
+df1 = pd.read_csv("atmosphericGases.csv");
+
+
+def mercury():
+   
+   print(" ")
+   print("Mercury is the first planet from the Sun and the smallest in the Solar System. It is a terrestrial planet with a heavily cratered surface due to overlapping impact events. These features are well preserved since the planet has no geological activity and an extremely tenuous atmosphere called an exosphere. Mercury may have a solid silicate crust and mantle overlying a solid outer core, a deeper liquid core layer, and a solid inner core. Having almost no atmosphere to retain heat, Mercury has surface temperatures that change wildly during the day, ranging from 100 K (-173 °C; -280 °F) at night to 700 K (427 °C; 800 °F) during sunlight across the equator regions.")
+   print("")
+   print("Enter 1 to view atmosphere analysis");
+   a = int(input());
+   
+   match a:
+       
+       case 1:
+        
+        #line graph
+        plt.plot(df1["Gases"], df1["Mercury"]);
+        plt.title("Mercury atmosphere analysis")
+        plt.ylabel("Gas%")
+        plt.show();
+        
+        #bar graph
+        plt.bar(df1["Gases"], df1["Mercury"], color = "slateblue");
+        plt.title("Mercury atmosphere analysis")
+        plt.ylabel("Gas%")
+        plt.show();
+        
+        #scatter plot
+        plt.scatter(df1["Gases"], df1["Mercury"], color = "red");
+        plt.title("Mercury atmosphere analysis")
+        plt.xlabel("Gases")
+        plt.ylabel("Gas%")
+        plt.grid();
+        plt.show();
+        
+        #pie chart
+        plt.pie(df1["Mercury"],labels = df1["Gases"],autopct='%1.1f%%' );
+        plt.title("Mercury atmosphere analysis")
+        plt.show();
+   
+   
+   
+   return 0;
+
+def venus():
+    
+    print(" ")
+    print("Venus is the second planet from the Sun. It is a rocky planet with the densest atmosphere of all the rocky bodies in the Solar System, and the only one with a mass and size that is close to that of its orbital neighbour Earth.Venus has a weak induced magnetosphere and an especially thick carbon dioxide atmosphere, which creates, together with its global sulfuric acid cloud cover, an extreme greenhouse effect. This results at the surface in a mean temperature of 737 K (464 °C, 867 °F).Venus has a rotation which has been slowed and turned against its orbital direction by the strong currents and drag of its atmosphere.")
+    print("")
+    print("Enter 1 to view atmosphere analysis");
+    a = int(input());
+   
+    match a:
+       
+       case 1:
+        
+        #line graph
+        plt.plot(df1["Gases"], df1["Venus"]);
+        plt.title("Venus atmosphere analysis")
+        plt.ylabel("Gas%")
+        plt.show();
+        
+        #bar graph
+        plt.bar(df1["Gases"], df1["Venus"], color = "slateblue");
+        plt.title("Venus atmosphere analysis")
+        plt.ylabel("Gas%")
+        plt.show();
+        
+        #scatter plot
+        plt.scatter(df1["Gases"], df1["Venus"], color = "red");
+        plt.title("Venus atmosphere analysis")
+        plt.xlabel("Gases")
+        plt.ylabel("Gas%")
+        plt.grid();
+        plt.show();
+        
+        #pie chart
+        plt.pie(df1["Venus"],labels = df1["Gases"],autopct='%1.1f%%' );
+        plt.title("Venus atmosphere analysis")
+        plt.show();
+    return 0;
+
+def earth():
+    
+     print(" ")
+     print("Earth is the third planet from the Sun and the only astronomical object known to harbor life. This is enabled by Earth being a water world, the only one in the Solar System sustaining liquid surface water. Almost all of Earth's water is contained in its global ocean, covering 70.8 percent of Earth's crust. The remaining 29.2 percent of Earth's crust is land. Earth has a dynamic atmosphere, which sustains Earth's surface conditions and protects it from most meteoroids and UV-light at entry. It has a composition of primarily nitrogen and oxygen. Water vapor is widely present in the atmosphere, forming clouds that cover most of the planet. The water vapor acts as a greenhouse gas and, together with other greenhouse gases in the atmosphere, particularly carbon dioxide (CO2), creates the conditions for both liquid surface water and water vapor to persist via the capturing of energy from the Sun's light. This process maintains the current average surface temperature of 14.76 °C, at which water is liquid under atmospheric pressure.  ")
+     print("")
+     print("Enter 1 to view atmosphere analysis");
+     a = int(input());
+   
+     match a:
+       
+       case 1:
+        
+        #line graph
+        plt.plot(df1["Gases"], df1["Earth"]);
+        plt.title("Earth atmosphere analysis")
+        plt.ylabel("Gas%")
+        plt.show();
+        
+        #bar graph
+        plt.bar(df1["Gases"], df1["Earth"], color = "slateblue");
+        plt.title("Earth atmosphere analysis")
+        plt.ylabel("Gas%")
+        plt.show();
+        
+        #scatter plot
+        plt.scatter(df1["Gases"], df1["Earth"], color = "red");
+        plt.title("Earth atmosphere analysis")
+        plt.xlabel("Gases")
+        plt.ylabel("Gas%")
+        plt.grid();
+        plt.show();
+        
+        #pie chart
+        plt.pie(df1["Earth"],labels = df1["Gases"],autopct='%1.1f%%' );
+        plt.title("Earth atmosphere analysis")
+        plt.show();
+     return 0;
+
+def mars():
+    
+     print(" ")
+     print("Mars is the fourth planet and the furthest terrestrial planet from the Sun. The reddish color of its surface is due to finely grained iron(III) oxide dust in the soil, giving it the nickname the Red Planet. Mars has a thin atmosphere made primarily of carbon dioxide and two irregularly shaped natural satellites: Phobos and Deimos.Geologically, Mars is fairly active, with dust devils sweeping across the landscape and marsquakes (Martian analog to earthquakes) trembling underneath the ground. The surface of Mars hosts a large shield volcano (Olympus Mons) and one of the largest canyons in the Solar System (Valles Marineris). Mars's significant orbital eccentricity and axial tilt cause large seasonal changes to the polar ice caps' coverage and temperature swings between -110 °C (-166 °F) to 35 °C (95 °F) on the surface. A Martian solar day (sol) is equal to 24.5 hours and a Martian solar year is equal to 1.88 Earth years.Mars is among the brightest objects in Earth's sky, and thus has been known from ancient times.Currently, Mars is an attractive target for the first future interplanetary human missions.")
+     print("")
+     print("Enter 1 to view atmosphere analysis");
+     a = int(input());
+   
+     match a:
+       
+       case 1:
+        
+        #line graph
+        plt.plot(df1["Gases"], df1["Mars"]);
+        plt.title("Mars atmosphere analysis")
+        plt.ylabel("Gas%")
+        plt.show();
+        
+        #bar graph
+        plt.bar(df1["Gases"], df1["Mars"], color = "slateblue");
+        plt.title("Mars atmosphere analysis")
+        plt.ylabel("Gas%")
+        plt.show();
+        
+        #scatter plot
+        plt.scatter(df1["Gases"], df1["Mars"], color = "red");
+        plt.title("Mars atmosphere analysis")
+        plt.xlabel("Gases")
+        plt.ylabel("Gas%")
+        plt.grid();
+        plt.show();
+        
+        #pie chart
+        plt.pie(df1["Mars"],labels = df1["Gases"],autopct='%1.1f%%' );
+        plt.title("Mars atmosphere analysis")
+        plt.show();
+     return 0;
+
+def jupiter():
+    
+     print(" ")
+     print("Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, and slightly less than one one-thousandth the mass of the Sun. It was named after Jupiter, the chief deity of ancient Roman religion.Jupiter is surrounded by a faint planetary ring system and has a powerful magnetosphere, the second largest contiguous structure in the Solar System. Jupiter forms a system of 92 known moons and probably many more, including the four large moons discovered by Galileo Galilei in 1610: Io, Europa, Ganymede, and Callisto. Ganymede, the largest of the four, is larger than the planet Mercury. Callisto is the second largest; Io and Europa are approximately the size of Earth's Moon.")
+     print("")
+     print("Enter 1 to view atmosphere analysis");
+     a = int(input());
+   
+     match a:
+       
+       case 1:
+        
+        #line graph
+        plt.plot(df1["Gases"], df1["Jupiter"]);
+        plt.title("Jupiter atmosphere analysis")
+        plt.ylabel("Gas%")
+        plt.show();
+        
+        #bar graph
+        plt.bar(df1["Gases"], df1["Jupiter"], color = "slateblue");
+        plt.title("Jupiter atmosphere analysis")
+        plt.ylabel("Gas%")
+        plt.show();
+        
+        #scatter plot
+        plt.scatter(df1["Gases"], df1["Jupiter"], color = "red");
+        plt.title("Jupiter atmosphere analysis")
+        plt.xlabel("Gases")
+        plt.ylabel("Gas%")
+        plt.grid();
+        plt.show();
+        
+        #pie chart
+        plt.pie(df1["Jupiter"],labels = df1["Gases"],autopct='%1.1f%%' );
+        plt.title("Jupiter atmosphere analysis")
+        plt.show();
+     return 0;
+
+def saturn():
+    
+     print(" ")
+     print("Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine-and-a-half times that of Earth.It has only one-eighth the average density of Earth, but is over 95 times more massive. Saturn's interior is thought to be composed of a rocky core, surrounded by a deep layer of metallic hydrogen, an intermediate layer of liquid hydrogen and liquid helium, and finally, a gaseous outer layer. The outer atmosphere is generally bland and lacking in contrast, although long-lived features can appear. Wind speeds on Saturn can reach 1,800 kilometres per hour. The planet has a prominent ring system, which is composed mainly of ice particles, with a smaller amount of rocky debris and dust. Titan, Saturn's largest moon and the second largest in the Solar System, is larger (while less massive) than the planet Mercury and is the only moon in the Solar System to have a substantial atmosphere")
+     print("")
+     print("Enter 1 to view atmosphere analysis");
+     a = int(input());
+   
+     match a:
+       
+       case 1:
+        
+        #line graph
+        plt.plot(df1["Gases"], df1["Saturn"]);
+        plt.title("Saturn atmosphere analysis")
+        plt.ylabel("Gas%")
+        plt.show();
+        
+        #bar graph
+        plt.bar(df1["Gases"], df1["Saturn"], color = "slateblue");
+        plt.title("Saturn atmosphere analysis")
+        plt.ylabel("Gas%")
+        plt.show();
+        
+        #scatter plot
+        plt.scatter(df1["Gases"], df1["Saturn"], color = "red");
+        plt.title("Saturn atmosphere analysis")
+        plt.xlabel("Gases")
+        plt.ylabel("Gas%")
+        plt.grid();
+        plt.show();
+        
+        #pie chart
+        plt.pie(df1["Saturn"],labels = df1["Gases"],autopct='%1.1f%%' );
+        plt.title("Saturn atmosphere analysis")
+        plt.show();
+     return 0;
+
+def uranus():
+    
+     print(" ")
+     print("Uranus is the seventh planet from the Sun and is a gaseous cyan ice giant. Most of the planet is made of water, ammonia, and methane in a supercritical phase of matter, which in astronomy is called 'ice' or volatiles. The planet's atmosphere has a complex layered cloud structure and has the lowest minimum temperature of 49 K out of all Solar System's planets. Uranus has the third-largest diameter and fourth-largest mass among the Solar System's planets.Like the other giant planets, Uranus has a ring system, orbiting natural satellites and a magnetosphere. Its ring system is extremely dark, with only about 2 percent of the incoming light reflected. Uranus is visible to the naked eye, but it is very dim and was not classified as a planet until 1781, when it was first observed by William Herschel. About seven decades after its discovery, consensus was reached that the planet be named from the Greek god Uranus")
+     print("")
+     print("Enter 1 to view atmosphere analysis");
+     a = int(input());
+   
+     match a:
+       
+       case 1:
+        
+        #line graph
+        plt.plot(df1["Gases"], df1["Uranus"]);
+        plt.title("Uranus atmosphere analysis")
+        plt.ylabel("Gas%")
+        plt.show();
+        
+        #bar graph
+        plt.bar(df1["Gases"], df1["Uranus"], color = "slateblue");
+        plt.title("Uranus atmosphere analysis")
+        plt.ylabel("Gas%")
+        plt.show();
+        
+        #scatter plot
+        plt.scatter(df1["Gases"], df1["Uranus"], color = "red");
+        plt.title("Uranus atmosphere analysis")
+        plt.xlabel("Gases")
+        plt.ylabel("Gas%")
+        plt.grid();
+        plt.show();
+        
+        #pie chart
+        plt.pie(df1["Uranus"],labels = df1["Gases"],autopct='%1.1f%%' );
+        plt.title("Uranus atmosphere analysis")
+        plt.show();
+     return 0;
+
+def neptune():
+    
+     print(" ")
+     print("Neptune is the eighth planet from the Sun and the farthest IAU-recognized planet in the Solar System. It is the fourth-largest planet in the Solar System by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, and slightly more massive than its near-twin Uranus. Neptune is denser and physically smaller than Uranus because its greater mass causes more gravitational compression of its atmosphere. Being composed primarily of gases and liquids, it has no well-defined solid surface. The planet orbits the Sun once every 164.8 years at an orbital distance of 30.1 astronomical units. Neptune is not visible to the unaided eye and is the only planet in the Solar System found by mathematical predictions rather than by empirical observation. Unexpected changes in the orbit of Uranus led Alexis Bouvard to hypothesise that its orbit was subject to gravitational perturbation by an unknown planet. After Bouvard's death, the position of Neptune was predicted from his observations, independently, by John Couch Adams and Urbain Le Verrier. Neptune's atmosphere is composed primarily of hydrogen and helium, along with traces of hydrocarbons and possibly nitrogen, but contains a higher proportion of ices such as water, ammonia and methane.The blue colour is more saturated than the one present on Uranus due to the thinner haze of Neptune's more active atmosphere.")
+     print("")
+     print("Enter 1 to view atmosphere analysis");
+     a = int(input());
+   
+     match a:
+       
+       case 1:
+        
+        #line graph
+        plt.plot(df1["Gases"], df1["Neptune"]);
+        plt.title("Neptune atmosphere analysis")
+        plt.ylabel("Gas%")
+        plt.show();
+        
+        #bar graph
+        plt.bar(df1["Gases"], df1["Neptune"], color = "slateblue");
+        plt.title("Neptune atmosphere analysis")
+        plt.ylabel("Gas%")
+        plt.show();
+        
+        #scatter plot
+        plt.scatter(df1["Gases"], df1["Neptune"], color = "red");
+        plt.title("Neptune atmosphere analysis")
+        plt.xlabel("Gases")
+        plt.ylabel("Gas%")
+        plt.grid();
+        plt.show();
+        
+        #pie chart
+        plt.pie(df1["Neptune"],labels = df1["Gases"],autopct='%1.1f%%' );
+        plt.title("Neptune atmosphere analysis")
+        plt.show();
+     return 0;
+
+def planets():
+    
+    print("")
+    print("Welcome to the planet section of this analysis. Here you will be provided with detailed insights of different planets")
+    print(" ")
+    print("A planet is a large, rounded astronomical body that is neither a star nor its remnant. The best available theory of planet formation is the nebular hypothesis, which posits that an interstellar cloud collapses out of a nebula to create a young protostar orbited by a protoplanetary disk. Planets grow in this disk by the gradual accumulation of material driven by gravity, a process called accretion. The Solar System has at least eight planets: the terrestrial planets Mercury, Venus, Earth, and Mars, and the giant planets Jupiter, Saturn, Uranus, and Neptune.");
+    print(" ")
+    
+    print("Type 1 for exploring MERCURY")
+    print("Type 2 for exploring VENUS")
+    print("Type 3 for exploring EARTH")
+    print("Type 4 for exploring MARS")
+    print("Type 5 for exploring JUPITER")
+    print("Type 6 for exploring SATURN")
+    print("Type 7 for exploring URANUS")
+    print("Type 8 for exploring NEPTUNE")
+    
+    choice3 = int(input())
+    
+    match choice3:
+         
+         case 1:
+             mercury()
+             
+         case 2: 
+             venus()
+          
+         case 3:
+             earth()
+             
+         case 4:
+             mars()
+             
+         case 5:
+             jupiter()
+             
+         case 6:
+             saturn()
+             
+         case 7:
+             uranus();
+             
+         case 8:
+             neptune();
+             
+         case _:
+             print("INVALID INPUT!!!")                            
+    
+    return 0;
+
+def solarSystem():
+    print("Here's everything you need to know about your Solar System");
+    print(" ")
+    
+    print(df);
+    print(" ")
+    
+    print("Tell me which property are you interested in ???");
+    print(" ")
+    print("Type 1 for Radius ")
+    print("Type 2 for Mass")
+    print("Type 3 for Density")
+    print("Type 4 for Gravity ")
+    print("Type 5 for Escape velocity")
+    print("Type 6 for Rotation Period")
+    print("Type 7 for Mean Temperature")
+    print("Type 8 for Number of moons")
+    print(" ")
+    choice1 = int(input());
+    
+    match choice1:
+        
+        case 1:
+            
+            #radius
+            #straight line graph
+            plt.plot(df["Name"],df["Radius(km)"]);
+            plt.title("Radius Analysis");
+            plt.ylabel("Radius(km)");
+            plt.show();
+            
+            #bar graph
+            plt.bar(df["Name"],df["Radius(km)"], color = "slateblue");
+            plt.title("Radius Analysis");
+            plt.ylabel("Radius(km)");
+            plt.show();
+            
+            #scatter graph
+            plt.scatter(df["Name"],df["Radius(km)"], color = "red");
+            plt.title("Radius Analysis");
+            plt.ylabel("Radius(km)");
+            plt.grid();
+            plt.show();
+            
+            #pie chart
+            plt.pie(df["Radius(km)"], labels=df["Name"],autopct='%1.1f%%');
+            plt.title("Radius Analysis");
+            plt.show();
+        
+        case 2:
+           
+            #mass
+            #straight line graph
+            plt.plot(df["Name"],df["Mass( 10^24kg)"]);
+            plt.title("Mass Analysis");
+            plt.ylabel("Mass(10^24kg)");
+            plt.show();
+            
+            #bar graph
+            plt.bar(df["Name"],df["Mass( 10^24kg)"], color = "slateblue");
+            plt.title("Mass Analysis");
+            plt.ylabel("Mass(10^24 kg)");
+            plt.show();
+            
+            #scatter graph
+            plt.scatter(df["Name"],df["Mass( 10^24kg)"], color = "red");
+            plt.title("Mass Analysis");
+            plt.ylabel("Mass(10^24 kg)");
+            plt.grid();
+            plt.show();
+            
+            #pie chart
+            plt.pie(df["Mass( 10^24kg)"], labels=df["Name"]);
+            plt.title("Mass Analysis");
+            plt.show();  
+            
+        case 3:
+             
+             #density
+              #straight line graph
+            plt.plot(df["Name"],df["Density(kg/m^3)"]);
+            plt.title("Density Analysis");
+            plt.ylabel("Density(kg/m^3)");
+            plt.show();
+            
+            #bar graph
+            plt.bar(df["Name"],df["Density(kg/m^3)"], color = "slateblue");
+            plt.title("Density Analysis");
+            plt.ylabel("Density(kg/m^3)");
+            plt.show();
+            
+            #scatter graph
+            plt.scatter(df["Name"],df["Density(kg/m^3)"], color = "red");
+            plt.title("Density Analysis");
+            plt.ylabel("Density(kg/m^3)");
+            plt.grid();
+            plt.show();
+            
+            #pie chart
+            plt.pie(df["Density(kg/m^3)"], labels=df["Name"],autopct='%1.1f%%');
+            plt.title("Density Analysis");
+            plt.show();     
+            
+        case 4:
+            
+            #gravity
+             #straight line graph
+            plt.plot(df["Name"],df["Gravity(m/s^2)"]);
+            plt.title("Gravity Analysis");
+            plt.ylabel("Gravity(m/s^2)");
+            plt.show();
+            
+            #bar graph
+            plt.bar(df["Name"],df["Gravity(m/s^2)"], color = "slateblue");
+            plt.title("Gravity Analysis");
+            plt.ylabel("Gravity(m/s^2)");
+            plt.show();
+            
+            #scatter graph
+            plt.scatter(df["Name"],df["Gravity(m/s^2)"], color = "red");
+            plt.title("Gravity Analysis");
+            plt.ylabel("Gravity(m/s^2)");
+            plt.grid();
+            plt.show();
+            
+            #pie chart
+            plt.pie(df["Gravity(m/s^2)"], labels=df["Name"],autopct='%1.1f%%');
+            plt.title("Gravity Analysis");
+            plt.show();     
+            
+        case 5: 
+            
+            #escape velocity
+             #straight line graph
+            plt.plot(df["Name"],df["Escape velocity(km/s)"]);
+            plt.title("Escape velocity Analysis");
+            plt.ylabel("Escape velocity(km/s)");
+            plt.show();
+            
+            #bar graph
+            plt.bar(df["Name"],df["Escape velocity(km/s)"], color = "slateblue");
+            plt.title("Escape velocity Analysis");
+            plt.ylabel("Escape velocity(km/s)");
+            plt.show();
+            
+            #scatter graph
+            plt.scatter(df["Name"],df["Escape velocity(km/s)"], color = "red");
+            plt.title("Escape velocity Analysis");
+            plt.ylabel("Escape velocity(km/s)");
+            plt.grid();
+            plt.show();
+            
+            #pie chart
+            plt.pie(df["Escape velocity(km/s)"], labels=df["Name"],autopct='%1.1f%%');
+            plt.title("Escape velocity Analysis");
+            plt.show();     
+            
+        case 6:
+            
+            #rotation period
+            #straight line graph
+            plt.plot(df["Name"],df["Rotation Period(hours)"]);
+            plt.title("Rotation Period Analysis");
+            plt.ylabel("Rotation Period(hours)");
+            plt.show();
+            
+            #bar graph
+            plt.bar(df["Name"],df["Rotation Period(hours)"], color = "slateblue");
+            plt.title("Rotation Period Analysis");
+            plt.ylabel("Rotation Period(hours)");
+            plt.show();
+            
+            #scatter graph
+            plt.scatter(df["Name"],df["Rotation Period(hours)"], color = "red");
+            plt.title("Rotation Period Analysis");
+            plt.ylabel("Rotation Period(hours)");
+            plt.grid();
+            plt.show();
+            
+            #pie chart
+            plt.pie(df["Rotation Period(hours)"], labels=df["Name"]);
+            plt.title("Rotation Period Analysis");
+            plt.show();  
+                    
+        case 7: 
+            
+            #mean temperature
+            #straight line graph
+            plt.plot(df["Name"],df["Mean Temperature(C)"]);
+            plt.title("Mean Temperature Analysis");
+            plt.ylabel("Mean Temperature(C)");
+            plt.show();
+            
+            #bar graph
+            plt.bar(df["Name"],df["Mean Temperature(C)"], color = "slateblue");
+            plt.title("Mean Temperature Analysis");
+            plt.ylabel("Mean Temperature(C)");
+            plt.show();
+            
+            #scatter graph
+            plt.scatter(df["Name"],df["Mean Temperature(C)"], color = "red");
+            plt.title("Mean Temperature Analysis");
+            plt.ylabel("Mean Temperature(C)");
+            plt.grid();
+            plt.show();
+            
+          #no pie chart as we can't plot negative values
+            
+        case 8:
+            
+            #moons
+             #straight line graph
+            plt.plot(df["Name"],df["Number of moons"]);
+            plt.title("Moons Analysis");
+            plt.ylabel("Number of moons");
+            plt.show();
+            
+            #bar graph
+            plt.bar(df["Name"],df["Number of moons"], color = "slateblue");
+            plt.title("Moons Analysis");
+            plt.ylabel("Number of moons");
+            plt.show();
+            
+            #scatter graph
+            plt.scatter(df["Name"],df["Number of moons"], color = "red");
+            plt.title("Moons Analysis");
+            plt.ylabel("Number of moons");
+            plt.grid();
+            plt.show();
+            
+            #pie chart
+            plt.pie(df["Number of moons"], labels=df["Name"],autopct='%1.1f%%');
+            plt.title("Moons Analysis");
+            plt.show();              
+                
+    return 0;
+
+
+print(" ")
+print("Hiii!!!! I am your inter-terrestrial friend and I will provide you a detailed analysis of your solar system.");
+print("Type 1 if you want an overview of solar system and type 2 if you are more interested in planets!!!");
+choice = int(input());
+
+match choice:
+    case 1:
+        solarSystem();
+        
+    case 2:
+        planets();    
+        
+    case _:
+          print("INVALID INPUT!!!")      
+
+
+
+
+
